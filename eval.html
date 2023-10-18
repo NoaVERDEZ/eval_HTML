@@ -7,20 +7,34 @@
     <style>
         .Menu {
             height: 75px;
-            background-color: #ff9999;
-            display: flex;
-            justify-content: center;
-            align-items: center;   
+            background-color: darkred;
+            text-align: center;
+            width: 100%;
+            position: static;
+            font-size: 20px;
+ 
     }
     
         .Corps {
-            height: 350px;
-            background-color: lightgreen;
+            float: right;
+            height: 800px;
+            background-color: #99CCFF;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            font-size: 25px;
     }
     
         .Footer {
+            background-color: #d9c570;
+            text-align: center;
+            position: fixed;
+            top: 825px;
+            padding: 20px;
+            right: 15px;
             height: 100px;
-            background-color: lightyellow;
+            font-size: 25px;
+            width: 100%;
     }
     
         .Contenu {
@@ -37,8 +51,18 @@
             line-height: 200px;
             position: relative;     
         }
+        .tableau {
+            height: 300px;
+            width: 400px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+            position: relative; 
+            float: left;
 
-        
+        }
+
+
     </style>
 </head>
 
@@ -50,22 +74,34 @@
 
     <div class="Corps">
         <p>Début de paragraphe : Je suis un site composé de 3 div principales Avec les class : Menu , Corps et<br> Footer. Le corps possède une propriété qui permet d'avoir une certaine hauteur de 350px.Le footer<br> est à 100px et le menu à 75. A la fin de ce paragraphe il y aura 2 div de contenu . fin de paragraphe</p>
-    </div>
+    
     
 
-    <div class="DivBleue">
-        Dans cette div Bleu voici une image
-        <img src="html.png" alt="Image">
+        <div class="DivBleue">
+            Dans cette div Bleu voici une image
+            <img src="html.png" alt="Image">
+        </div>
+
+        <div class="tableau">
+            <p>Dans cette div verte Voici un petit tableau avec<br> une class table</p>
+            <table border="1">
+                <tr>
+                    <td colspan="2">Cellule 1 avec une marge interieure de 10px</td>
+                    <td rowspan="2">Je suis une cellule fusionnel</td>
+                </tr>
+                <tr>
+                    <td>
+                        Cellule 3
+                    </td>
+                </tr>
+
+    </div>
+    <div class="Footer">
+    <a href="https://www.google.com/search?q=google&oq=google&aqs=chrome.0.69i59l3j0i271j69i60l4.568j0j7&sourceid=chrome&ie=UTF-8"></a>
     </div>
 
 
-
-
-
-    
-
-    <h1 style="color: red"></h1>Je suis le plus gros titre HTML</h1>
-    <p>Je suis un site composé de 3 div principales Avec les class : Menu , Corps et Footer. Le corps possède une propriété qui permet d'avoir une certaine hauteur de 350px.Le footer est à 100px et le menu à 75. A la fin de ce paragraphe il y aura 2 div de contenu</p>
+  
 
 </body>
 </html>
